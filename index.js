@@ -14,7 +14,7 @@ app.use(express.static('public', { maxAge: 86400000 }));
 
 // test-imageリクエスト
 app.get('/test-image', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/test.png'));
+  res.sendFile(path.join(__dirname, 'public/images/test.png'));
 });
 
 // GETリクエスト
